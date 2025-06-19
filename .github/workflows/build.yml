@@ -1,0 +1,21 @@
+name: Build
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      - name: Compile Book
+        uses: dante-ev/latex-action@edge
+        with:
+          root_file: ./src/main.tex
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: Documentation.pdf
+          path: main.pdf

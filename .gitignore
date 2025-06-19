@@ -1,0 +1,12 @@
+# System Related
+.DS_Store
+
+# LaTex Related
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.lof
+*.out
+*.toc

@@ -66,9 +66,11 @@
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
-\usepackage[default]{raleway}
-%\usepackage[defaultsans]{droidsans}
-%\usepackage{cmbright}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+\usepackage{inconsolata}
 
 \renewcommand*\familydefault{\sfdefault} % Force the sans-serif version of any font used
 
